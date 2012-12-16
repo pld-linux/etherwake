@@ -1,0 +1,21 @@
+diff -urN etherwake-1.09.orig.org/ether-wake.c etherwake-1.09.orig/ether-wake.c
+--- etherwake-1.09.orig.org/ether-wake.c	2012-12-16 13:43:11.000000000 +0100
++++ etherwake-1.09.orig/ether-wake.c	2012-12-16 13:43:55.310189554 +0100
+@@ -131,7 +131,7 @@
+ 		case 'D': debug++;			break;
+ 		case 'i': ifname = optarg;	break;
+ 		case 'p': get_wol_pw(optarg); break;
+-		case 'u': printf(usage_msg); return 0;
++		case 'u': printf("%s", usage_msg); return 0;
+ 		case 'v': verbose++;		break;
+ 		case 'V': do_version++;		break;
+ 		case '?':
+@@ -140,7 +140,7 @@
+ 	if (verbose || do_version)
+ 		printf("%s\n", version_msg);
+ 	if (errflag) {
+-		fprintf(stderr, brief_usage_msg);
++		fprintf(stderr, "%s", brief_usage_msg);
+ 		return 3;
+ 	}
+ 
