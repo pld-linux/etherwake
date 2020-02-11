@@ -5,9 +5,9 @@ Version:	1.09
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	ftp://ftp.debian.org/debian/pool/main/e/etherwake/%{name}_%{version}.orig.tar.gz
+Source0:	http://ftp.debian.org/debian/pool/main/e/etherwake/%{name}_%{version}.orig.tar.gz
 # Source0-md5:	628e8b2a28d47f262e4c26c989402a59
-Patch0:		ftp://ftp.debian.org/debian/pool/main/e/etherwake/%{name}_%{version}-3.diff.gz
+Patch0:		http://ftp.debian.org/debian/pool/main/e/etherwake/%{name}_%{version}-3.diff.gz
 # Patch0-md5:	c6fbb2cfde669866d67f6cf8c2cc686b
 Patch1:		%{name}-build.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
